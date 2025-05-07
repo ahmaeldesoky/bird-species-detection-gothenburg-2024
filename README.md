@@ -43,11 +43,21 @@ The recommended directory structure for the above scripts to run as expected is 
          └── species_accuracy_and_misclassification.txt
 ```
 
-## About the Resulting Dataset 
+## The Resulting Dataset 
+
+### About
 
 The dataset produced using the above scripts includes **239,570 occurrence records** of **61 species** from April 21 to June 16, 2024, across 30 sites in central Gothenburg, Sweden. 
 
-The dataset is available to download from https://zenodo.org/records/15350316 and a detailed documentation, including URI identifiers, definitions, and examples for all attributes (column headers), is available at https://smog-chalmers.github.io/BirdMonitoringGothenburg/. 
+### Download
+
+The dataset is available to download from https://zenodo.org/records/15350316
+
+### Documentation
+
+A detailed documentation of the dataset, including URI identifiers, definitions, and examples for all attributes (column headers), is available at https://smog-chalmers.github.io/BirdMonitoringGothenburg/
+
+### Preperation
 
 Depending on the use case, users may want to filter the dataset based on the [occurrenceProbability](https://smog-chalmers.github.io/BirdMonitoringGothenburg/#occurrenceProbability) attribute using the following recommended thresholds (see the paper for more details) to retain only non-validated records that meet the specified criteria:
 
@@ -62,12 +72,10 @@ Depending on the use case, users may want to filter the dataset based on the [oc
     ```r
     occurrence %>% filter(occurrenceProbability >= 0.82)
     ```
-    
-## Citation
 
-If you use this repository in your work, please cite it using the metadata available under 'Cite this repository' in the 'About' section. 
+### Citation 
 
-For the dataset, please cite as:
+If you use this dataset in your work, please cite as:
 
 ```bibtex
 @misc{eldesoky2025birdspecies,
@@ -80,3 +88,11 @@ For the dataset, please cite as:
   url = {https://doi.org/10.5281/zenodo.15350316}
 }
 ```
+
+## Licence
+
+MIT Licence
+
+## Citation
+
+If you use this code in your work, please cite it using the metadata available under 'Cite this repository' in the 'About' section. 
