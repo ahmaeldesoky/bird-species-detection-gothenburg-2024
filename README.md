@@ -51,15 +51,16 @@ The dataset produced using the above scripts includes **239,570 occurrence recor
 
 ### Download
 
-The dataset is available to download from https://zenodo.org/records/15350316
+The dataset is available to download from https://zenodo.org/records/15350316.
 
 ### Documentation
 
-A detailed documentation of the dataset, including URI identifiers, definitions, and examples for all attributes (column headers), is available at https://smog-chalmers.github.io/BirdMonitoringGothenburg/
+A detailed documentation of the dataset, including URI identifiers, definitions, and examples for all attributes (column headers), is available at https://smog-chalmers.github.io/BirdMonitoringGothenburg/.
 
-### Preperation
+### Dataset Filtering
 
-Depending on the use case, users may want to filter the dataset based on the [occurrenceProbability](https://smog-chalmers.github.io/BirdMonitoringGothenburg/#occurrenceProbability) attribute using the following recommended thresholds (see the paper for more details) to retain only non-validated records that meet the specified criteria:
+Depending on the use case, users may want to filter the dataset based on the [occurrenceProbability](https://smog-chalmers.github.io/BirdMonitoringGothenburg/#occurrenceProbability) attribute using the following recommended thresholds (see the paper for more details) to:
+
 
 - **Balancing sensitivity and specificity** (an optimal threshold determined based on [Youden's J statistic](https://acsjournals.onlinelibrary.wiley.com/doi/10.1002/1097-0142(1950)3:1%3C32::AID-CNCR2820030106%3E3.0.CO;2-3)):
 
