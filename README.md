@@ -1,8 +1,8 @@
-## Introduction
+# Introduction
 
 This repository contains R scripts for analyzing audio files using the BirdNET classifier ([Kahl et al., 2021](https://www.sciencedirect.com/science/article/pii/S1574954121000273?via%3Dihub)), validating the results, visualizing classification accuracy, and generating a curated occurrence dataset in the Darwin Core standard.
 
-## Scripts Overview
+# Scripts Overview
 
 1. **`analyze_audio_files.R`**: Analyzes raw audio files using the BirdNET classifier and formats the output with additional attributes (column headers) for easier data manipulation.
 2. **`retrieve_sample_audio.R`**: Function that retrieves and samples audio files based on different criteria for manual expert validation.
@@ -10,7 +10,7 @@ This repository contains R scripts for analyzing audio files using the BirdNET c
 4. **`RF_probability_modelling.R`**: Trains and evaluates a Random Forest model to predict the probability of correctness for non-validated records (i.e., the likelihood that the BirdNET classification is correct).
 5. **`create_final_dataset.R`**: Produces and exports the final occurrence dataset in Darwin Core Standard.
 
-## Directory Structure
+# Directory Structure
 
 The recommended directory structure for the above scripts to run as expected is as follows:
 
@@ -43,12 +43,11 @@ The recommended directory structure for the above scripts to run as expected is 
          └── species_accuracy_and_misclassification.txt
 ```
 
-## Dataset
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15350316.svg)](https://doi.org/10.5281/zenodo.15350316)
+# About the Resulting Dataset 
 
-The dataset produced using this code is available to download from https://zenodo.org/records/15350316 and a detailed documentation, including URI identifiers, definitions, and examples for all attributes (column headers), is available at https://smog-chalmers.github.io/BirdMonitoringGothenburg/. 
+The dataset produced using the above scripts includes **239,570 occurrence records** of **61 species** from April 21 to June 16, 2024, across 30 sites in central Gothenburg, Sweden. 
 
-The dataset includes **239,570 occurrence records** of **61 species** from April 21 to June 16, 2024, across 30 sites in central Gothenburg, Sweden. 
+The dataset is available to download from https://zenodo.org/records/15350316 and a detailed documentation, including URI identifiers, definitions, and examples for all attributes (column headers), is available at https://smog-chalmers.github.io/BirdMonitoringGothenburg/. 
 
 Depending on the use case, users may want to filter the dataset based on the [occurrenceProbability](https://smog-chalmers.github.io/BirdMonitoringGothenburg/#occurrenceProbability) attribute using the following recommended thresholds (see the paper for more details) to retain only non-validated records that meet the specified criteria:
 
@@ -64,7 +63,7 @@ Depending on the use case, users may want to filter the dataset based on the [oc
     occurrence %>% filter(occurrenceProbability >= 0.82)
     ```
     
-## Citation
+# Citation
 
 If you use this repository in your work, please cite it using the metadata available under 'Cite this repository' in the 'About' section. 
 
