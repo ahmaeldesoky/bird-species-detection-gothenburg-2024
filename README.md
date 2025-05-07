@@ -8,7 +8,7 @@ This repository contains R scripts for analyzing audio files using the BirdNET c
 2. **`retrieve_sample_audio.R`**: Function that retrieves and samples audio files based on different criteria for manual expert validation.
 3. **`accuracy_and_plot.R`**: Calculates and visualizes BirdNET classification accuracy, following [Sethi et al., (2024)](https://www.pnas.org/doi/10.1073/pnas.2315933121), for each species based on expert manual validation.
 4. **`RF_probability_modelling.R`**: Trains and evaluates a Random Forest model to predict the probability of correctness for non-validated records (i.e., the likelihood that the BirdNET classification is correct).
-5. **`create_final_dataset.R`**: Produces and exports the final occurrence dataset in Darwin Core Standard.
+5. **`create_final_dataset.R`**: Produces and exports the final occurrence dataset in [Darwin Core Standard](https://dwc.tdwg.org/).
 
 ## Directory Structure
 
