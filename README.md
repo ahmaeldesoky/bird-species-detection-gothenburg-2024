@@ -51,7 +51,7 @@ The dataset produced using the above scripts includes **239,570 occurrence recor
 
 ### Download
 
-The dataset is available to download from https://zenodo.org/records/15350316.
+The dataset is available to download at https://zenodo.org/records/15350316.
 
 ### Documentation
 
@@ -62,13 +62,13 @@ A detailed documentation of the dataset, including URI identifiers, definitions,
 Depending on the use case, users may want to filter the dataset based on the [occurrenceProbability](https://smog-chalmers.github.io/BirdMonitoringGothenburg/#occurrenceProbability) attribute using the following recommended thresholds (see the paper for more details) to:
 
 
-- **Balancing sensitivity and specificity** (an optimal threshold determined based on [Youden's J statistic](https://acsjournals.onlinelibrary.wiley.com/doi/10.1002/1097-0142(1950)3:1%3C32::AID-CNCR2820030106%3E3.0.CO;2-3)):
+- **Balance sensitivity and specificity** (an optimal threshold determined based on [Youden's J statistic](https://acsjournals.onlinelibrary.wiley.com/doi/10.1002/1097-0142(1950)3:1%3C32::AID-CNCR2820030106%3E3.0.CO;2-3)):
 
     ```r
     occurrence %>% filter(occurrenceProbability >= 0.74)
     ```
     
--  **Maximizing specificity** (a stricter threshold that minimizes false positives):
+-  **Maximize specificity** (a stricter threshold that minimizes false positives):
 
     ```r
     occurrence %>% filter(occurrenceProbability >= 0.82)
