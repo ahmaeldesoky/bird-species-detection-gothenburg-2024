@@ -1,0 +1,11 @@
+# Configuration for BirdNET Analysis
+birdnet:
+  birdnet_version: 'v1.3.1'                                       # BirdeNET version
+  birdnet_executable: "<path_to_BirdNET_executable>"              # Path to BirdNET Analyzer executable
+raw_audio: "<path_to_raw_audio_directory>"                      # Directory containing raw audio files
+BirdNET_raw_results: "<path_to_BirdNET_results>"                # Directory for storing BirdNET raw results
+path_to_species_list: "<path_to_species_list_file>"             # Path to the custom species list file
+path_to_species_taxon_data: "<path_to_species_taxon_data_file>" # Path to species taxon data file
+path_to_site_metadata: "<path_to_site_metadata_file>"           # Path to site metadata file
+validation_data: "<path_to_output_directory>"                   # Directory for validation data
+output_path: "<path_to_output_directory>"                       # Directory for storing final outputs
