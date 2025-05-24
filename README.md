@@ -41,6 +41,8 @@ The recommended directory structure for the above scripts to run as expected is 
      └── output/              # Final results generated from processing
          ├── occurrence.txt
          └── species_accuracy_and_misclassification.txt
+         └── species.txt
+
 ```
 
 ## The Resulting Dataset 
@@ -93,7 +95,3 @@ If you use this dataset in your work, please cite as:
 ## Licence
 
 MIT Licence
-
-## Citation
-
-If you use this code in your work, please cite it using the metadata available under 'Cite this repository' in the 'About' section. 
